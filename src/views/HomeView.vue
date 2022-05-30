@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import Pokeball from "../components/pokeball.vue";
+import PokeballSvg from "../components/PokeballSvg.vue";
 </script>
 
 <template>
-  <Pokeball></Pokeball>
+  <Transition name="fade">
+    <PokeballSvg></PokeballSvg>
+  </Transition>
   <!-- <img height="300" width="300" src="@/assets/pokeball.svg" alt="Pokeball" > -->
 </template>

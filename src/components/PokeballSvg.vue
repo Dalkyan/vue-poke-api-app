@@ -2,7 +2,7 @@
   <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
   <svg
-    class="min-w-min drop-shadow-lg"
+    class="min-w-min max-h-min"
     width="50vw"
     viewBox="0 0 100.0 100.0"
     version="1.1"
@@ -10,6 +10,21 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:svg="http://www.w3.org/2000/svg"
   >
+    <ellipse
+      style="
+        fill: #0f0f0f;
+        fill-opacity: 0.292605;
+        stroke: none;
+        stroke-width: 0.341;
+        stroke-miterlimit: 4;
+        stroke-dasharray: none;
+      "
+      id="path4906"
+      cx="46"
+      cy="91"
+      rx="31.468737"
+      ry="8.8846416"
+    />
     <defs id="defs824" />
     <g id="poke-svg">
       <g
@@ -20,7 +35,7 @@
           id="path939"
           style="
             fill: #f2f2f2;
-            fill-opacity: 0.803858;
+            fill-opacity: 1;
             stroke: #333333;
             stroke-width: 1;
             stroke-miterlimit: 4;

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn{ 
+  @apply p-2 mx-2 border-x-cyan-900 border-x-4 hover:bg-cyan-700;
+  }
+  .flex-center{
+    @apply flex items-center justify-center;
+  }
+  #poke-btn{
+      @apply fill-gray-200 cursor-pointer hover:fill-gray-800;
+  }
+}
+
+@font-face {
+  font-family: pokeFamily;
+  src: url(@/assets/pm.otf);
+}
+body{
+  font-family: pokeFamily, fantasy;
+}

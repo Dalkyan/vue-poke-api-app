@@ -2,13 +2,14 @@
   <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
   <svg
-    class="min-w-min max-h-min"
+    class="min-w-min max-h-min move"
     width="50vw"
     viewBox="0 0 100.0 100.0"
     version="1.1"
     id="SVGRoot"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:svg="http://www.w3.org/2000/svg"
+    style="fill-opacity: 1"
   >
     <ellipse
       style="
@@ -35,7 +36,6 @@
           id="path939"
           style="
             fill: #f2f2f2;
-            fill-opacity: 1;
             stroke: #333333;
             stroke-width: 1;
             stroke-miterlimit: 4;
@@ -46,8 +46,7 @@
         <path
           id="path1848"
           style="
-            fill: #1a1a1a;
-            fill-opacity: 0.803858;
+            fill: #333;
             stroke: #333333;
             stroke-width: 1;
             stroke-miterlimit: 4;
@@ -59,7 +58,6 @@
           id="path1846"
           style="
             fill: #ff0000;
-            fill-opacity: 0.803858;
             stroke: #333333;
             stroke-width: 1;
             stroke-miterlimit: 4;
@@ -72,7 +70,7 @@
             fill: #e6e6e6;
             fill-opacity: 1;
             stroke: #333333;
-            stroke-width: 1;
+            stroke-width: 2;
             stroke-miterlimit: 4;
             stroke-dasharray: none;
           "

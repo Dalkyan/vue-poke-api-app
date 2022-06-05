@@ -8,13 +8,21 @@ import "@/assets/base.css";
     <div class="wrapper">
       <nav class="flex-center">
         <RouterLink class="btn" to="/">Home</RouterLink>
-       <h1 class="text-xl md:text-5xl">Poke Api App</h1>
+        <h1 class="text-xl md:text-5xl">Poke Api App</h1>
         <RouterLink class="btn" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
-  <main  class="flex-center m-4">
-    <RouterView />
+  <main class="flex-center m-4">
+    <Suspense>
+      <RouterView />
+      <template #fallback>
+        <!-- TODO - doesn't work as intended -->
+        <p>
+          Couldn't load data from the PokeApi - check your internet connection.
+        </p>
+      </template>
+    </Suspense>
   </main>
 </template>
 

@@ -1,6 +1,4 @@
 <template>
-  <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
   <svg
     class="min-w-min max-h-min move"
     width="50vw"
@@ -79,19 +77,21 @@
           cy="50"
           r="12.690478"
         />
-        <circle
-          style="
-            fill-opacity: 1;
-            stroke: #333333;
-            stroke-width: 1;
-            stroke-miterlimit: 4;
-            stroke-dasharray: none;
-          "
-          id="poke-btn"
-          cx="50"
-          cy="50"
-          r="10.364721"
-        />
+        <RouterLink :to="`/pokemon/${index}`">
+          <circle
+            style="
+              fill-opacity: 1;
+              stroke: #333;
+              stroke-width: 1;
+              stroke-miterlimit: 4;
+              stroke-dasharray: none;
+            "
+            id="poke-btn"
+            cx="50"
+            cy="50"
+            r="10.364721"
+          />
+        </RouterLink>
       </g>
     </g>
     <path
@@ -101,3 +101,8 @@
     />
   </svg>
 </template>
+<script setup lang="ts">
+const props = defineProps<{
+  index: number;
+}>();
+</script>

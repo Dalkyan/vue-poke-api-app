@@ -1,10 +1,11 @@
 module.exports = {
-  content: [
-    './index.html',
-    '**.vue'
-  ],
+  content: ["./index.html", "**.vue"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "bounce-slow": "bounce 2s infinite",
+      },
+    },
   },
   plugins: [],
-}
+};

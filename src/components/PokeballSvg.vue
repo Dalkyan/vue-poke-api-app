@@ -102,7 +102,8 @@
   </svg>
 </template>
 <script setup lang="ts">
-const props = defineProps<{
+import { RouterLink } from "vue-router";
+defineProps<{
   index: number;
 }>();
 </script>

@@ -7,9 +7,9 @@ import "@/assets/base.css";
   <header class="bg-cyan-500">
     <div class="wrapper">
       <nav class="flex-center">
-        <RouterLink class="btn" to="/">Home</RouterLink>
+        <RouterLink class="btn text-l md:text-4xl" to="/">Home</RouterLink>
         <h1 class="text-xl md:text-5xl">Poke Api App</h1>
-        <RouterLink class="btn" to="/about">About</RouterLink>
+        <RouterLink class="btn text-l md:text-4xl" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>

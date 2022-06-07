@@ -6,7 +6,7 @@ import PokemonFetcher from "@/components/PokemonFetcher.vue";
     <PokemonFetcher></PokemonFetcher>
     <template #fallback>
       <img
-        class="animate-ping w-1/3"
+        class="animate-ping w-1/3 mt-12"
         src="@/assets/pokeball.svg"
         alt="Pokeball pulsating"
       />

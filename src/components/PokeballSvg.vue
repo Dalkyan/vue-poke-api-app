@@ -1,7 +1,7 @@
 <template>
   <svg
     class="min-w-min max-h-min move"
-    width="50vw"
+    width="40vw"
     viewBox="0 0 100.0 100.0"
     version="1.1"
     id="SVGRoot"

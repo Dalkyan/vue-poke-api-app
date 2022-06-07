@@ -31,21 +31,27 @@ let front: true;
 <template>
   <template v-if="isWorking">
     <div class="flex-center flex-col">
-      <p class="mt-6">Here should be a pokemon:</p>
-      <img
-        class="motion-safe:animate-bounce-slow md:mt-4"
-        v-if="[front]"
-        :src="pokemon.sprites.front_default"
-        :alt="pokemon.name"
-      />
-      <!-- TODO toggling sprites  -->
-      <img
-        v-else
-        class="back"
-        :src="pokemon.sprites.back_default"
-        :alt="pokemon.name"
-      />
-      <h1 class="xl:text-6xl bg-orange-500 rounded-full px-4 py-2">
+      <p class="md:text-4xl bg-orange-300 rounded-full px-4 py-2">
+        Pokemon id #{{ $route.params.slug }}
+      </p>
+      <div class="bg-gray-300 rounded-full p-6">
+        <img
+          class="motion-safe:animate-bounce-slow md:mt-4"
+          v-if="[front]"
+          :src="pokemon.sprites.front_default"
+          :alt="pokemon.name"
+        />
+        <!-- TODO toggling sprites  -->
+        <img
+          v-else
+          class="back"
+          :src="pokemon.sprites.back_default"
+          :alt="pokemon.name"
+        />
+      </div>
+      <h1
+        class="md:text-6xl tracking-wide bg-orange-300 rounded-full px-4 py-2"
+      >
         {{ pokemon.name }}
       </h1>
     </div>

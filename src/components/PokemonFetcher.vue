@@ -50,7 +50,7 @@ let front: true;
         />
       </div>
       <h1
-        class="md:text-6xl tracking-wide bg-orange-300 rounded-full px-4 py-2"
+        class="md:text-4xl tracking-wide bg-orange-300 rounded-full px-4 py-2"
       >
         {{ pokemon.name }}
       </h1>
@@ -73,7 +73,7 @@ let front: true;
 <style>
 img {
   width: 50vw;
-  max-width: 400px;
+  max-width: 50vh;
 }
 .back {
   transform: scaleX(-1);

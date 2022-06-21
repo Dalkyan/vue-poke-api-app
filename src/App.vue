@@ -7,22 +7,18 @@ import "@/assets/base.css";
   <header class="bg-cyan-500">
     <div class="wrapper">
       <nav class="flex-center">
-        <RouterLink class="btn text-l md:text-4xl" to="/">Home</RouterLink>
-        <h1 class="text-xl md:text-5xl">Poke Api App</h1>
-        <RouterLink class="btn text-l md:text-4xl" to="/about">About</RouterLink>
+        <RouterLink class="btn" to="/">Home</RouterLink>
+        <RouterLink
+          class="px-1 py-2 hover:bg-cyan-700 text-xl md:py-1 md:px-2 md:text-5xl"
+          to="/"
+          ><h1>Poke Api App</h1>
+        </RouterLink>
+        <RouterLink class="btn" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
-  <main class="flex-center m-4">
-    <Suspense>
-      <RouterView />
-      <template #fallback>
-        <!-- TODO - doesn't work as intended -->
-        <p>
-          Couldn't load data from the PokeApi - check your internet connection.
-        </p>
-      </template>
-    </Suspense>
+  <main class="flex-center flex-col m-4">
+    <RouterView />
   </main>
 </template>
 

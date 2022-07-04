@@ -19,7 +19,12 @@ const fetchPokemon = async () => {
     console.log("Fetch successful");
     const pokemonRes = await res.json();
     console.log(pokemonRes.name);
-    return pokemonRes;
+    console.log(pokemonRes.sprites.front_default);
+    if (pokemonRes.sprites.front_default) {
+      return pokemonRes;
+    } else {console.error("Couldn't find the image file in the database");
+      return (isWorking = false);
+    }
   } catch (error) {
     console.error("Couldn't fetch this request");
     isWorking = false;
@@ -36,7 +41,7 @@ let front: true;
       </p>
       <div class="bg-gray-300 rounded-full p-6">
         <img
-          class="motion-safe:animate-bounce-slow md:mt-4"
+          class="motion-safe:animate-bounce-slow md:mt-4 poke-img"
           v-if="[front]"
           :src="pokemon.sprites.front_default"
           :alt="pokemon.name"
@@ -71,7 +76,7 @@ let front: true;
 </template>
 
 <style>
-img {
+.poke-img {
   width: 50vw;
   max-width: 50vh;
 }

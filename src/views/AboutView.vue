@@ -1,5 +1,5 @@
 <template>
-  <div class="about flex-col flex-center">
+  <div class="about font-mono flex-col flex-center">
     <h1 class="text-2xl xl:text-4xl">How to use this site</h1>
     <div class="flex flex-center">
       <div class="flex-center flex-col">
@@ -16,7 +16,7 @@
     </div>
     <div class="mt-2">
       <p>
-        You may also directly type the id of a pokemon (from 1 to 898) in your
+        If you are running this app locally, you may also directly type the id of a pokemon (from 1 to 898) in your
         browser:
       </p>
       <img src="@/assets/typing.gif" alt="typing id in the browser" />
